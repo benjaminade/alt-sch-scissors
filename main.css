@@ -1,7 +1,7 @@
 body{
   box-sizing: border-box;
   margin: auto;
-  font-family: sans-serif;
+  font-family: Gilroy, Arial;
   padding: 10px;
  
 }
@@ -373,13 +373,7 @@ width:auto;
 height:523px;
 margin-top: 50px;
 }
-.vector1,.vector2,.vector3{
-  position:absolute;
-}
-.vector4,.vector5{
-  position: absolute;
-  left: 720px;
-}
+
 .info-box{
   width: 476px;
   height: 335px;
@@ -461,12 +455,48 @@ color: #0065fe;
 .bold{
   font-family: Gilroy-Bold;
 }
+.vector1,.vector2,.vector3{
+  position:absolute;
+}
+.vector4{
+  position: absolute;
+  right: 0;
+}
+.vector5{
+  position:absolute;
+  right:0;
+}
+.vector6,.vector7,.vector8{
+  position: absolute;
+  left: 0;
+}
+.vector9,.vector10,.vector11{
+  position: absolute;
+  right: 0;
+  top:560%;
+}
+.vector12,.vector13,.vector14{
+  position: absolute;
+  left: 0;
+  top:629%;
+}
+.vector15,.vector16,.vector17{
+  position: absolute;
+  right: 0;
+  top:720%;
+}
+.vector18,.vector19,.vector20{
+  position: absolute;
+  left: 0;
+  top:800%;
+}
 
 .FAQs{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  z-index: 0;
 }
 .faq-head{
   text-align: center;
@@ -480,24 +510,55 @@ color: #0065fe;
   top:85px;
   right: 50px;
 }
+
+.accordion {
+  background-color: transparent;
+  color: #444;
+  cursor: pointer;
+  padding: 12px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+  content: '\02795';
+  font-size: 10px;
+  color: black;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796";
+}
 .faq-accordion{
   margin-top: 100px;
   padding: 10px;
   width:500px;
 }
-.faq-accordion li{
+.faq-accordion div{
   list-style: none;
   border-bottom:1px black solid ;
   margin-bottom: 10px;
   text-align: left;
 }
-.faq-accordion li label{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  padding-bottom:10px ;
+.accordion{
   font-size: 14px;
+}
+.panel{
+  font-size: 12px;
+  line-height: 20px;
 }
 .faq-accordion  label + input[type='radio']{
   display: none;
@@ -516,6 +577,7 @@ color: #0065fe;
   .faq-accordion label + input[type='radio']:checked + .content{
     max-height: 400px;
   }
+
 
   .optimize{
     background-color: rgba(30,52,70,1);
