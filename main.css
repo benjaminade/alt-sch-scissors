@@ -50,6 +50,10 @@ body{
   color:#0065fe;
   line-height: 18.75px;
 }
+.log-in,.try-free{
+  cursor: pointer;
+  margin-left: 2px;
+}
 .log-in{
   width: 45px;
   height:20px;
@@ -106,10 +110,12 @@ margin: 0;
   border-radius: 30px;
   border: 0;
   color:#ffffff;
+  cursor: pointer;
 }
 .hero-3 p{
   display: inline-block;
   margin: 0;
+  cursor: pointer;
 }
 .group{
   width:833px;
@@ -344,6 +350,9 @@ height: 130px;
   align-items: center;
   text-align: center;
 }
+.button-div button{
+  cursor: pointer;
+}
 .custom-btn{
 width: 200px;
 height: 48px;
@@ -446,6 +455,7 @@ color: #0065fe;
   border-radius: 100px;
   font-size: 15px;
   font-weight: 700;
+  cursor: pointer;
 }
 .p-agree{
   text-align: left;
@@ -472,8 +482,8 @@ color: #0065fe;
 }
 .vector9,.vector10,.vector11{
   position: absolute;
-  right: 0;
-  top:560%;
+  right: 50px;
+  top:620%;
 }
 .vector12,.vector13,.vector14{
   position: absolute;
@@ -482,13 +492,19 @@ color: #0065fe;
 }
 .vector15,.vector16,.vector17{
   position: absolute;
-  right: 0;
-  top:720%;
+  right: 10px;
+  top:595%;
+  transform: rotate(360deg);
 }
 .vector18,.vector19,.vector20{
   position: absolute;
   left: 0;
-  top:800%;
+  top:740%;
+}
+.vector21,.vector22,.vector23{
+  position: absolute;
+  right: 0;
+  top: 780%;
 }
 
 .FAQs{
@@ -605,6 +621,7 @@ color: #ffffff;
 height: 48px;
 font-size: 15px;
 font-weight: 600; 
+cursor: pointer;
   }
   .grid-f{
     padding: 150px 300px;
@@ -642,6 +659,12 @@ width: 155px;
     margin: 0;
     line-height: 30px;
     font-size: 13px;
+  }
+  .grid-f2 div p a{
+    cursor: pointer;
+  }
+  .grid-f2 div p a:hover{
+    border-bottom:black 1px solid ;
   }
   .footer-div{
     display: flex;
